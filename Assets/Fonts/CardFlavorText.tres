@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dpopsi8bwevy"]
+
+[ext_resource type="FontFile" uid="uid://b75iwgqkafc0k" path="res://Assets/Fonts/ITC Benguiat Book Regular.otf" id="1_434lt"]
+
+[resource]
+resource_local_to_scene = true
+font = ExtResource("1_434lt")
+font_size = 15
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
