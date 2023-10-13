@@ -1,7 +1,5 @@
-res://Assets/Cards/Card.tscn
-res://Assets/Scenes/Playspace.gd
 res://Assets/Scenes/playspace.tscn
 res://Assets/Scenes/Cards.gd
-res://Assets/Cards/CardScripts/Card.gd
+res://Assets/Scenes/Playspace.gd
+res://Global.gd
 res://Assets/Scenes/DeckDraw.gd
-res://Assets/Cards/CardScripts/Player_Hand.gd
