@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-playspace="*res://Assets/Scenes/Playspace.gd"
+Cards="*res://Assets/Scenes/Cards.gd"
 
 [display]
 

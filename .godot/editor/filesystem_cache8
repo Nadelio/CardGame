@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697141310
+::res://::1697217190
 README.md::TextFile::-1::1697053245::0::1::::<><>::
 ::res://Assets/::1696450644
 ::res://Assets/Background/::1696536132
 Background.png::CompressedTexture2D::3271481550799154037::1696447429::1696447461::1::::<><>::
 DeckBottom.png::CompressedTexture2D::1098221764151549404::1696535971::1696535994::1::::<><>::
 DeckEmpty.png::CompressedTexture2D::1675143277200469098::1696536121::1696536132::1::::<><>::
-::res://Assets/Cards/::1697130335
-Card.tscn::PackedScene::6783659575388759577::1697049894::0::1::::<><>::res://Assets/Cards/CardScripts/Card.gd<>uid://dh7a0i40ab8nm::::res://Assets/Cards/Card Faces/ShieldmanCard.png<>uid://dne0xuuwb4qlw::::res://Assets/Cards/Card Frames/GreenBasicFrame.png<>uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf<>uid://m4a0rehhw7a4::::res://Assets/Fonts/CardText.tres<>uid://07yxuuslekrj::::res://Assets/Fonts/CardStats.tres<>uid://dpopsi8bwevy::::res://Assets/Fonts/CardFlavorText.tres
+::res://Assets/Cards/::1697217162
+Card.tscn::PackedScene::6783659575388759577::1697217162::0::1::::<><>::res://Assets/Cards/CardScripts/Card.gd<>uid://dh7a0i40ab8nm::::res://Assets/Cards/Card Faces/ShieldmanCard.png<>uid://dne0xuuwb4qlw::::res://Assets/Cards/Card Frames/GreenBasicFrame.png<>uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf<>uid://m4a0rehhw7a4::::res://Assets/Fonts/CardText.tres<>uid://07yxuuslekrj::::res://Assets/Fonts/CardStats.tres<>uid://dpopsi8bwevy::::res://Assets/Fonts/CardFlavorText.tres
 ::res://Assets/Cards/Card Faces/::1697049885
 ArcherCard.png::CompressedTexture2D::2877846221989441307::1696442366::1696442387::1::::<><>::
 KnightCard.png::CompressedTexture2D::5970158336778434585::1696445862::1696445883::1::::<><>::
@@ -22,12 +22,12 @@ RedGoldFrame.png::CompressedTexture2D::1751180015630980913::1696358005::16963581
 Card.gd::GDScript::-1::1696620685::0::1::::<>Control<>::
 CardDatabase.gd::GDScript::-1::1696620662::0::1::::<>RefCounted<>::
 Player_Hand.gd::GDScript::-1::1696614496::0::1::::<>RefCounted<>::
-::res://Assets/Fonts/::1697049894
-CardFlavorText.tres::LabelSettings::242409981312611026::1697049894::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
-CardStats.tres::LabelSettings::1822280542362728067::1697049894::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
-CardText.tres::LabelSettings::902178622776218653::1697049894::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+::res://Assets/Fonts/::1697216574
+CardFlavorText.tres::LabelSettings::242409981312611026::1697216574::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+CardStats.tres::LabelSettings::1822280542362728067::1697216574::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+CardText.tres::LabelSettings::902178622776218653::1697216574::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
 ITC Benguiat Book Regular.otf::FontFile::4694920376451495500::1696266636::1696358589::1::::<><>::
-::res://Assets/Scenes/::1697130335
-DeckDraw.gd::GDScript::-1::1696621222::0::1::::<>TextureButton<>::
-Playspace.gd::GDScript::-1::1696622312::0::1::::<>Node2D<>::
-playspace.tscn::PackedScene::7427001227770143050::1697049894::0::1::::<><>::res://Assets/Scenes/Playspace.gd<>uid://bmuy28t7xdnsv::::res://Assets/Background/Background.png<>uid://pv8s1d68c4qi::::res://Assets/Background/DeckBottom.png<>uid://x4pmn8kcm8v3::::res://Assets/Background/DeckEmpty.png<>res://Assets/Scenes/DeckDraw.gd
+::res://Assets/Scenes/::1697217162
+DeckDraw.gd::GDScript::-1::1697216418::0::1::::<>TextureButton<>::
+Playspace.gd::GDScript::-1::1697217161::0::1::::<>Node2D<>::
+playspace.tscn::PackedScene::7427001227770143050::1697217162::0::1::::<><>::res://Assets/Scenes/Playspace.gd<>uid://bmuy28t7xdnsv::::res://Assets/Background/Background.png<>uid://pv8s1d68c4qi::::res://Assets/Background/DeckBottom.png<>uid://x4pmn8kcm8v3::::res://Assets/Background/DeckEmpty.png<>res://Assets/Scenes/DeckDraw.gd
