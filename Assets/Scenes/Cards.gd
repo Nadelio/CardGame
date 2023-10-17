@@ -21,11 +21,11 @@ func drawcard():
 	CardSelected = randi() % DeckSize
 	new_card.Cardname = CardList[CardSelected]
 	OvalAngleVector = Vector2(Horizontal_rad * cos(angle), -Vertical_rad * sin(angle))
-	new_card.position = CenterCardOval + OvalAngleVector - new_card.size/2
+	new_card.startpos = $"../Deck".position
+	new_card.targetpos = CenterCardOval + OvalAngleVector - new_card.size/2
 	new_card.scale *= CardSize/new_card.size
-	print(new_card.rotation)
 	new_card.rotation = deg_to_rad((90 - rad_to_deg(angle))/4)
-	print(new_card.rotation)
+	new_card.state = new_card.MoveDrawnCardToHand
 	add_child(new_card)
 	CardList.erase(CardList[CardSelected])
 	angle += 0.2
