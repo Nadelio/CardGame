@@ -4,4 +4,4 @@
 ##### In Development
 
 - Currently following this tutorial (Current time stamp included in link) -> [Godot Card Game Tutorial: Part 3 - Drawing Cards Animation
-](https://www.youtube.com/watch?v=fNda4mRzHIo)
+](https://youtu.be/fNda4mRzHIo?si=J4URMhyW63Qb6pI2&t=395)
