@@ -3,15 +3,15 @@ extends Node
 const CardSize = Vector2(125, 175)
 const CardBase = preload("res://Assets/Cards/Card.tscn")
 var CardSelected = []
-var CardList = ["Archer", "Knight", "Shieldman"]
+var CardList = ["Archer", "Knight", "Shieldman", "Madking", "Archer"]
 
 @onready var DeckSize = CardList.size()
 @onready var ViewportSize = Vector2(get_viewport().content_scale_size)
-@onready var CenterCardOval = ViewportSize * Vector2(0.5, 1.25)
+@onready var CenterCardOval = ViewportSize * Vector2(0.5, 1.20)
 @onready var Horizontal_rad = ViewportSize.x * 0.45
 @onready var Vertical_rad = ViewportSize.y * 0.4
 
-var angle = deg_to_rad(90) 
+var angle = deg_to_rad(90) - 0.5
 var OvalAngleVector = Vector2()
 
 signal disable_node()
@@ -23,6 +23,9 @@ func drawcard():
 	OvalAngleVector = Vector2(Horizontal_rad * cos(angle), -Vertical_rad * sin(angle))
 	new_card.position = CenterCardOval + OvalAngleVector - new_card.size/2
 	new_card.scale *= CardSize/new_card.size
+	print(new_card.rotation)
+	new_card.rotation = deg_to_rad((90 - rad_to_deg(angle))/4)
+	print(new_card.rotation)
 	add_child(new_card)
 	CardList.erase(CardList[CardSelected])
 	angle += 0.2

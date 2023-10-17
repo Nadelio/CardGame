@@ -2,5 +2,7 @@ res://Assets/Scenes/playspace.tscn
 res://Assets/Fonts/CardText.tres
 res://Assets/Fonts/CardStats.tres
 res://Assets/Fonts/CardFlavorText.tres
-res://Assets/Scenes/DeckDraw.gd
 res://Assets/Scenes/Cards.gd
+res://Assets/Cards/Card.tscn
+res://Assets/Cards/CardScripts/CardDatabase.gd
+res://Assets/Cards/CardScripts/Card.gd
