@@ -2,6 +2,16 @@ extends Control
 
 #VARIABLES
 var Cardname = 'Knight'
+var startpos = 0
+var targetpos = 0
+var t = 0
+var DRAWTIME = 1
+var state = InHand
+#state enum
+enum
+{
+	InHand, InPlay, InMouse, FocusInHand, MoveDrawnCardToHand, ReOrganiseHand
+}
 
 #ONREADY VARIABLES
 @onready var CardDatabase = preload("res://Assets/Cards/CardScripts/CardDatabase.gd").new()
@@ -27,5 +37,24 @@ func _ready():
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _physics_process(delta):
+	match state:
+		InHand:
+			pass
+		InPlay:
+			pass
+		InMouse:
+			pass
+		FocusInHand:
+			pass
+		MoveDrawnCardToHand: #animate from the deck to my hand
+			pass
+			if t <= 1: #always be a 1
+				position = startpos.lerp(targetpos, t)
+				t += delta/float(DRAWTIME)
+			else:
+				position = targetpos
+				state = InHand
+				t = 0
+		ReOrganiseHand:
+			pass

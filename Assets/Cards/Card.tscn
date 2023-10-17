@@ -20,6 +20,7 @@ offset_right = 250.0
 offset_bottom = 350.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(125, 175)
 script = ExtResource("1_p3tan")
 
 [node name="Card" type="Sprite2D" parent="."]
