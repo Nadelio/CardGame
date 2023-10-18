@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dd2xviv3ixotu"]
+[gd_scene load_steps=8 format=3 uid="uid://dd2xviv3ixotu"]
 
 [ext_resource type="Texture2D" uid="uid://bmuy28t7xdnsv" path="res://Assets/Background/Background.png" id="1_uba31"]
 [ext_resource type="Script" path="res://Assets/Scenes/Cards.gd" id="2_v3qx6"]
 [ext_resource type="Texture2D" uid="uid://pv8s1d68c4qi" path="res://Assets/Background/DeckBottom.png" id="3_3er77"]
-[ext_resource type="Texture2D" uid="uid://x4pmn8kcm8v3" path="res://Assets/Background/DeckEmpty.png" id="4_d8q63"]
+[ext_resource type="Texture2D" uid="uid://bft2pytp7uhqo" path="res://Assets/Background/DeckBottomSemi.png" id="4_prmov"]
 [ext_resource type="Script" path="res://Assets/Scenes/DeckDraw.gd" id="5_debew"]
+[ext_resource type="Texture2D" uid="uid://wxbjpx3rjy0f" path="res://Assets/Background/DeckBottomPartial.png" id="5_pewsc"]
+[ext_resource type="Texture2D" uid="uid://3qvcjbufxibu" path="res://Assets/Background/DeckBottomClosed.png" id="6_n1d55"]
 
 [node name="Playspace" type="Node2D"]
 
@@ -22,9 +24,9 @@ script = ExtResource("2_v3qx6")
 offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("3_3er77")
-texture_pressed = ExtResource("3_3er77")
-texture_hover = ExtResource("3_3er77")
-texture_disabled = ExtResource("4_d8q63")
+texture_pressed = ExtResource("4_prmov")
+texture_hover = ExtResource("5_pewsc")
+texture_disabled = ExtResource("6_n1d55")
 script = ExtResource("5_debew")
 
 [connection signal="disable_node" from="Cards" to="Deck/DeckDraw" method="_on_cards_disable_node"]

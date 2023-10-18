@@ -1,6 +1,9 @@
+CollisionShape2D
+Area2D
+Sprite2D
+GPUParticles2D
 TextureButton
 Node2D
-Sprite2D
 Node
 MarginContainer
 VBoxContainer

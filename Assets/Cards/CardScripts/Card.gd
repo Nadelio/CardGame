@@ -1,12 +1,15 @@
 extends Control
 
-#VARIABLES
+#signals
+
+#variables
 var Cardname = 'Knight'
 var startpos = 0
 var targetpos = 0
 var t = 0
 var DRAWTIME = 1
 var state = InHand
+
 #state enum
 enum
 {
@@ -34,7 +37,6 @@ func _ready():
 	$"Card Damage".text = Damage
 	$"Card Retaliation".text = Retaliation
 	$"Card Cost".text = Cost
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
@@ -58,3 +60,16 @@ func _physics_process(delta):
 				t = 0
 		ReOrganiseHand:
 			pass
+			
+
+
+func _on_area_2d_mouse_entered():
+	var max_index = get_parent().get_child_count()
+	get_node("Hovered").show()
+	get_parent().move_child(self, max_index)
+
+
+func _on_area_2d_mouse_exited():
+	var max_index = get_parent().get_child_count()
+	get_parent().move_child(self, max_index * -1)
+	get_node("Hovered").hide()

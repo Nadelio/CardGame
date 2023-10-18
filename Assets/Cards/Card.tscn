@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c3wb48yedshft"]
+[gd_scene load_steps=11 format=3 uid="uid://c3wb48yedshft"]
 
 [ext_resource type="Script" path="res://Assets/Cards/CardScripts/Card.gd" id="1_p3tan"]
 [ext_resource type="Texture2D" uid="uid://dh7a0i40ab8nm" path="res://Assets/Cards/Card Faces/ShieldmanCard.png" id="2_0vuvq"]
@@ -7,11 +7,15 @@
 [ext_resource type="LabelSettings" uid="uid://m4a0rehhw7a4" path="res://Assets/Fonts/CardText.tres" id="4_mrpfc"]
 [ext_resource type="LabelSettings" uid="uid://07yxuuslekrj" path="res://Assets/Fonts/CardStats.tres" id="5_bsc8p"]
 [ext_resource type="LabelSettings" uid="uid://dpopsi8bwevy" path="res://Assets/Fonts/CardFlavorText.tres" id="5_qw0aa"]
+[ext_resource type="Texture2D" uid="uid://djlf75oo7r0ur" path="res://Assets/Background/HoveredCard.png" id="8_mff88"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tpvos"]
 font = ExtResource("3_ri2re")
 font_size = 38
 font_color = Color(0.996078, 0.913725, 0.407843, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mutfn"]
+size = Vector2(249.5, 349.5)
 
 [node name="Card" type="Control"]
 layout_mode = 3
@@ -97,3 +101,16 @@ text = "0"
 label_settings = SubResource("LabelSettings_tpvos")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Hovered" type="Sprite2D" parent="."]
+texture = ExtResource("8_mff88")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(125, 175)
+shape = SubResource("RectangleShape2D_mutfn")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

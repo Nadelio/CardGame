@@ -38,3 +38,5 @@ func _on_deck_draw_gui_input(_event):
 			DeckSize = drawcard()
 			if DeckSize == 0:
 				emit_signal("disable_node")
+
+
