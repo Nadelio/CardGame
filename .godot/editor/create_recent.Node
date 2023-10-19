@@ -1,3 +1,4 @@
+Label
 CollisionShape2D
 Area2D
 Sprite2D
@@ -9,7 +10,6 @@ MarginContainer
 VBoxContainer
 HBoxContainer
 BoxContainer
-Label
 Container
 AspectRatioContainer
 Camera2D

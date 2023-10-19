@@ -3,11 +3,11 @@ extends Node
 const CardSize = Vector2(125, 175)
 const CardBase = preload("res://Assets/Cards/Card.tscn")
 var CardSelected = []
-var CardList = ["Archer", "Knight", "Shieldman", "Madking", "Archer"]
+var CardList = ["Archer", "Knight", "Shieldman", "Madking", "Archer", "Madking"]
 
-@onready var DeckSize = CardList.size()
+@onready var DeckSize = 6
 @onready var ViewportSize = Vector2(get_viewport().content_scale_size)
-@onready var CenterCardOval = ViewportSize * Vector2(0.5, 1.20)
+@onready var CenterCardOval = ViewportSize * Vector2(0.5, 1.225)
 @onready var Horizontal_rad = ViewportSize.x * 0.45
 @onready var Vertical_rad = ViewportSize.y * 0.4
 

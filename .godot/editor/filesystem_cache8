@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697649709
-README.md::TextFile::-1::1697573507::0::1::::<><>::
+::res://::1697741000
+README.md::TextFile::-1::1697657481::0::1::::<><>::
 ::res://Assets/::1696450644
-::res://Assets/Background/::1697655488
-Background.png::CompressedTexture2D::3271481550799154037::1696447429::1696447461::1::::<><>::
+::res://Assets/Background/::1697742163
+Background.png::CompressedTexture2D::3271481550799154037::1697742163::1697742169::1::::<><>::
 DeckBottom.png::CompressedTexture2D::1098221764151549404::1697654884::1697654942::1::::<><>::
 DeckBottomClosed.png::CompressedTexture2D::1999596769537027870::1697654927::1697654942::1::::<><>::
 DeckBottomPartial.png::CompressedTexture2D::1591712862194043471::1697654900::1697654942::1::::<><>::
 DeckBottomSemi.png::CompressedTexture2D::2778255515560442890::1697654916::1697654942::1::::<><>::
 DeckEmpty.png::CompressedTexture2D::1675143277200469098::1696536121::1696536132::1::::<><>::
 HoveredCard.png::CompressedTexture2D::7814032127492363749::1697655488::1697655491::1::::<><>::
-::res://Assets/Cards/::1697655343
-Card.tscn::PackedScene::6783659575388759577::1697655343::0::1::::<><>::res://Assets/Cards/CardScripts/Card.gd<>uid://dh7a0i40ab8nm::::res://Assets/Cards/Card Faces/ShieldmanCard.png<>uid://dne0xuuwb4qlw::::res://Assets/Cards/Card Frames/GreenBasicFrame.png<>uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf<>uid://m4a0rehhw7a4::::res://Assets/Fonts/CardText.tres<>uid://07yxuuslekrj::::res://Assets/Fonts/CardStats.tres<>uid://dpopsi8bwevy::::res://Assets/Fonts/CardFlavorText.tres
+::res://Assets/Cards/::1697734972
+Card.tscn::PackedScene::6783659575388759577::1697734972::0::1::::<><>::res://Assets/Cards/CardScripts/Card.gd<>uid://dh7a0i40ab8nm::::res://Assets/Cards/Card Faces/ShieldmanCard.png<>uid://dne0xuuwb4qlw::::res://Assets/Cards/Card Frames/GreenBasicFrame.png<>uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf<>uid://m4a0rehhw7a4::::res://Assets/Fonts/CardText.tres<>uid://07yxuuslekrj::::res://Assets/Fonts/CardStats.tres<>uid://dpopsi8bwevy::::res://Assets/Fonts/CardFlavorText.tres<>uid://djlf75oo7r0ur::::res://Assets/Background/HoveredCard.png
 ::res://Assets/Cards/Card Faces/::1697564412
 ArcherCard.png::CompressedTexture2D::2877846221989441307::1696442366::1696442387::1::::<><>::
 KnightCard.png::CompressedTexture2D::5970158336778434585::1696445862::1696445883::1::::<><>::
@@ -30,15 +30,15 @@ RedDiamondFrame.png::CompressedTexture2D::3052224703732046894::1697573410::16976
 RedGoldFrame.png::CompressedTexture2D::1751180015630980913::1696358005::1696358109::1::::<><>::
 RedPlatinumFrame.png::CompressedTexture2D::5108108321013465852::1697573270::1697649710::1::::<><>::
 RedSilverFrame.png::CompressedTexture2D::1752331101848296082::1697573002::1697649710::1::::<><>::
-::res://Assets/Cards/CardScripts/::1697655343
-Card.gd::GDScript::-1::1697655343::0::1::::<>Control<>::
+::res://Assets/Cards/CardScripts/::1697657046
+Card.gd::GDScript::-1::1697657046::0::1::::<>Control<>::
 CardDatabase.gd::GDScript::-1::1697650367::0::1::::<>RefCounted<>::
-::res://Assets/Fonts/::1697649744
-CardFlavorText.tres::LabelSettings::242409981312611026::1697649744::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
-CardStats.tres::LabelSettings::1822280542362728067::1697649744::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
-CardText.tres::LabelSettings::902178622776218653::1697649744::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+::res://Assets/Fonts/::1697734918
+CardFlavorText.tres::LabelSettings::242409981312611026::1697734918::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+CardStats.tres::LabelSettings::1822280542362728067::1697734918::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
+CardText.tres::LabelSettings::902178622776218653::1697734918::0::1::::<><>::uid://b75iwgqkafc0k::::res://Assets/Fonts/ITC Benguiat Book Regular.otf
 ITC Benguiat Book Regular.otf::FontFile::4694920376451495500::1696266636::1696358589::1::::<><>::
-::res://Assets/Scenes/::1697655034
-Cards.gd::GDScript::-1::1697571492::0::1::::<>Node<>::
+::res://Assets/Scenes/::1697734972
+Cards.gd::GDScript::-1::1697656052::0::1::::<>Node<>::
 DeckDraw.gd::GDScript::-1::1697652249::0::1::::<>TextureButton<>::
-playspace.tscn::PackedScene::7427001227770143050::1697655034::0::1::::<><>::uid://bmuy28t7xdnsv::::res://Assets/Background/Background.png<>res://Assets/Scenes/Cards.gd<>uid://pv8s1d68c4qi::::res://Assets/Background/DeckBottom.png<>uid://bft2pytp7uhqo::::res://Assets/Background/DeckBottomSemi.png<>res://Assets/Scenes/DeckDraw.gd<>uid://wxbjpx3rjy0f::::res://Assets/Background/DeckBottomPartial.png<>uid://3qvcjbufxibu::::res://Assets/Background/DeckBottomClosed.png
+playspace.tscn::PackedScene::7427001227770143050::1697734972::0::1::::<><>::uid://bmuy28t7xdnsv::::res://Assets/Background/Background.png<>res://Assets/Scenes/Cards.gd<>uid://pv8s1d68c4qi::::res://Assets/Background/DeckBottom.png<>uid://bft2pytp7uhqo::::res://Assets/Background/DeckBottomSemi.png<>res://Assets/Scenes/DeckDraw.gd<>uid://wxbjpx3rjy0f::::res://Assets/Background/DeckBottomPartial.png<>uid://3qvcjbufxibu::::res://Assets/Background/DeckBottomClosed.png

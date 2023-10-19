@@ -67,9 +67,11 @@ func _on_area_2d_mouse_entered():
 	var max_index = get_parent().get_child_count()
 	get_node("Hovered").show()
 	get_parent().move_child(self, max_index)
+	position.y -= 20
 
 
 func _on_area_2d_mouse_exited():
 	var max_index = get_parent().get_child_count()
 	get_parent().move_child(self, max_index * -1)
+	position.y += 20
 	get_node("Hovered").hide()

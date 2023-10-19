@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dd2xviv3ixotu"]
+[gd_scene load_steps=9 format=3 uid="uid://dd2xviv3ixotu"]
 
 [ext_resource type="Texture2D" uid="uid://bmuy28t7xdnsv" path="res://Assets/Background/Background.png" id="1_uba31"]
 [ext_resource type="Script" path="res://Assets/Scenes/Cards.gd" id="2_v3qx6"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://Assets/Scenes/DeckDraw.gd" id="5_debew"]
 [ext_resource type="Texture2D" uid="uid://wxbjpx3rjy0f" path="res://Assets/Background/DeckBottomPartial.png" id="5_pewsc"]
 [ext_resource type="Texture2D" uid="uid://3qvcjbufxibu" path="res://Assets/Background/DeckBottomClosed.png" id="6_n1d55"]
+[ext_resource type="LabelSettings" uid="uid://b63ey8fh4fhcy" path="res://Assets/Fonts/PlayspaceText.tres" id="8_aoulj"]
 
 [node name="Playspace" type="Node2D"]
 
@@ -19,15 +20,30 @@ centered = false
 script = ExtResource("2_v3qx6")
 
 [node name="Deck" type="Node2D" parent="."]
+position = Vector2(515, 0)
 
 [node name="DeckDraw" type="TextureButton" parent="Deck"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 250.0
+offset_bottom = 350.0
 texture_normal = ExtResource("3_3er77")
 texture_pressed = ExtResource("4_prmov")
 texture_hover = ExtResource("5_pewsc")
 texture_disabled = ExtResource("6_n1d55")
 script = ExtResource("5_debew")
+
+[node name="PlayerHealth" type="Label" parent="."]
+offset_left = 3.0
+offset_right = 174.0
+offset_bottom = 35.0
+text = "Player Health: "
+label_settings = ExtResource("8_aoulj")
+
+[node name="EnemyHealth" type="Label" parent="."]
+offset_left = 938.0
+offset_right = 1118.0
+offset_bottom = 34.0
+text = "Enemy Health: "
+label_settings = ExtResource("8_aoulj")
 
 [connection signal="disable_node" from="Cards" to="Deck/DeckDraw" method="_on_cards_disable_node"]
 [connection signal="gui_input" from="Deck/DeckDraw" to="Cards" method="_on_deck_draw_gui_input"]
